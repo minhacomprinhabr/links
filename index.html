@@ -31,10 +31,32 @@
       border: 3px solid #fff;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
+
+    .item {
+      display: flex;
+      align-items: center;
+    }
+
+    .item-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin: 0 10px 0 0;
+      padding: 0;
+      border: none;
+      /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+    }
+
     h1 {
       font-size: 1.6rem;
       margin: 10px 0;
     }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
     p {
       font-size: 1rem;
       color: #555;
@@ -44,6 +66,9 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
+    }
+    .link {
+      margin: 0 auto;
     }
     .link-btn {
       background: #ff6f61;
@@ -68,14 +93,35 @@
 </head>
 <body>
   <div class="container">
-    <img src="logo.jpg" alt="Logo Minha.Comprinha_BR" class="profile-img">
+    <img src="img/logo.jpg" alt="Logo Minha.Comprinha_BR" class="profile-img">
     <h1>Minha.Comprinha_BR</h1>
     <p>✨ Achadinhos da Shopee e Mercado Livre ✨</p>
-
     <div class="links">
-      <a href="https://shopee.com" class="link-btn" target="_blank">🛍️ Meus Achados na Shopee</a>
-      <a href="https://mercadolivre.com" class="link-btn" target="_blank">📦 Achados no Mercado Livre</a>
-      <a href="https://instagram.com/minha.comprinha_br" class="link-btn" target="_blank">📸 Siga no Instagram</a>
+      <h4>📦 Achadinhos no Mercado Livre:</h4>
+      <a href="https://www.mercadolivre.com.br/social/marynakab/lists?matt_tool=52227375&forceInApp=true" class="link-btn" target="_blank">Lista completa</a>
+    </div>
+    <br>
+    <div class="links">
+      <h4>📦 Achadinhos na Shopee:</h4>
+      <div class="link">
+        <a href="https://s.shopee.com.br/Le4baCVUU" class="link-btn item" target="_blank">
+          <img src="img/catnip.jpg" alt="Brinquedo De Abacate Com Catnip Para Gatos" class="item-img">
+          Brinquedo De Abacate Com Catnip Para Gatos
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://s.shopee.com.br/40XMyMazha" class="link-btn item" target="_blank">
+          <img src="img/turner-page.jpg" alt="Controle Remoto RF Page Turner Camera Video Record Remote Para Acessórios Kindle" class="item-img">
+          Controle Remoto Page Turner Para Kindle
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://s.shopee.com.br/6fY89IDB9E" class="link-btn item" target="_blank">
+          <img src="img/suporte-almofada.jpg" alt="Suporte De Almofada Para Tablet Viozon , Kindle , Compatível Com/Telefone De 4 A 11" class="item-img">
+          Suporte De Almofada Para Tablet Kindle
+        </a>
+      </div>
+
     </div>
   </div>
   <footer>
